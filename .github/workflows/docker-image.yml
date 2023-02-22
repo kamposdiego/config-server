@@ -42,5 +42,8 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
+          platforms: linux/amd64
           push: true
-          tags: kamposdiego/config-server:latest
+          tags: |
+            kamposdiego/config-server:latest
+            kamposdiego/config-server:1.0
