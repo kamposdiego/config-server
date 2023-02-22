@@ -46,4 +46,4 @@ jobs:
           push: true
           tags: |
             kamposdiego/config-server:latest
-            kamposdiego/config-server:1.0
+            kamposdiego/config-server:1.0.0
