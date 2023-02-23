@@ -12,4 +12,4 @@ ARG JAR_FILE=target/*.jar
 
 COPY ${JAR_FILE} config-server.jar
 
-ENTRYPOINT ["java","-XX:+UseSerialGC","-XX:MaxRAM=80m","-jar","config-server.jar", "--spring.profiles.active=native"]
+ENTRYPOINT ["java","-XX:+UseSerialGC","-XX:MaxRAM=80m","-jar","config-server.jar"]
