@@ -8,6 +8,8 @@ ENV LOG_DIR /logs
 
 RUN apk add --no-cache bash
 
+EXPOSE 8888
+
 ARG JAR_FILE=target/*.jar
 
 COPY ${JAR_FILE} config-server.jar
